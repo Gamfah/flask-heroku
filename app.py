@@ -28,10 +28,10 @@ def hello():
 @app.route('/api', methods=['GET'])
 def get_api():
     return jsonify(data)
-@app.route('/h')
-@app.route('/hello')
+@app.route ('/h')
+@app.route ('/hello')
 def hi():
-    return"สวัสดี"
+    return "สวัสดี"
 
 if __name__ == "__main__":
     app.run(debug=False)
